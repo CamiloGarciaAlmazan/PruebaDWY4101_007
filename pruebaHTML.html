@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="../misJavaScript/JSconfirmaciones.js"></script>
+    <title>Agregar Tickets</title>
+  </head>
+  <body>
+    
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Gestion de mantencion</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="InicioFuncionario.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cuenta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">salir</a>
+            </li>
+          </ul>
+        </div>
+        </nav>
+      </div>
+    </div>
+
+
+
+<div class="row">
+<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 sidebar">
+<!--lista de ticket-->
+<ul class="list-group">
+  <li class="list-group-item list-group-item-secondary"><a href="#">Tickets</a></li>
+  <li class="list-group-item list-group-item-info"><a href="agregarTicket.html">Registrar ticket</a></li>
+  <li class="list-group-item list-group-item-info"><a href="listarTicket.html">listado de ticket</a></li>
+</ul>
+</div>
+<!--cuerpo de la web-->
+<div class="col-sm-9 col-sm-offset-9 col-md-9 col-md-offset-9 col-lg-9 col-xl-9 main">
+ <div class="container-fluid">
+  <div class="row">
+      <div class="container">
+  <header id="cabeza">
+      <div id="tituloymenu">
+          <h1>Registro de ticket:</h1>
+      </div>
+  </header>
+  <section id="centro">
+        <div class="container mt-6 col-lg-6">
+              <div class="card border-info">
+                  <div class="card-header bg-info">
+                      <h1> Agregar un nuevo registro ticket:</h1>
+                  </div>
+                  <div class="card-body">
+                      <form method="POST">
+                          <label>I)titulo del ticket:</label>
+                          <input type="text" name="titulo" class="form-control" placeholder="resuma su problema" required></br>
+                          <label>II)descripcion del ticket:</label>
+                          <textarea class="form-control" name="descripcion" rows="3" placeholder="describa a detalle su problema" required></textarea></br>
+                          <input type="submit" value="Agregar" class="btn btn-success" onclick="confirmarGuardado()" />
+                          <a href="listarTicket.html">regresar</a>
+                      </form>
+                  </div>
+              </div>
+          </div>
+  </section>
